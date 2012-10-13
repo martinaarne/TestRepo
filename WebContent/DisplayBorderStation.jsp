@@ -4,23 +4,26 @@
 <jsp:useBean id="borderStation" class="ee.itcollege.borderproject.model.BorderStation" scope="session" />
 <jsp:setProperty name="borderStation" property="*" />
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Kuva Piiripunkt</title>
-</head>
-<body>
-	<h3>Piiripunkt</h3>
-	<table>
-		<tr>
-			<th>Nimetus</th>
-			<th>Aadress</th>
-			<th>Valvurite arv</th>
-		</tr>
-		<tr>
-			<td>${borderStation.name }</td>
-			<td>${borderStation.address}</td>
-			<td>${borderStation.guardCount}</td>
-		</tr>
-	</table>
-</body>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<title>Kuva Piiripunkt</title>
+	</head>
+	<body>
+		<h3>Piiripunkt</h3>
+		<table>
+			<tr>
+				<th>Nimetus</th>
+				<td>${borderStation.name }</td>
+			</tr>
+			<tr>
+				<th>Aadress</th>			
+				<td>${borderStation.address}</td>
+				
+			</tr>
+			<tr>
+				<th>Valvurite arv</th>
+				<td>${borderStation.guardCount}</td>
+			</tr>
+		</table>
+	</body>
 </html>
